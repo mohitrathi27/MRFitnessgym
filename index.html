@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Ysabeau+Office&display=swap"
+    rel="stylesheet">
+
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Ysabeau Office', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("gym.jpg");
+        color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mid {
+        border: 2px solid green;
+        width: 33%;
+        margin: 26px auto;
+        display: block;
+    }
+
+    .left {
+        /* border: 20px solid red; */
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 60px;
+    }
+
+    .logo {
+        width: 50px;
+
+
+    }
+
+    .left img {
+        margin: 10px;
+        filter: invert(100%);
+
+    }
+
+    .right {
+        border: 20px blue;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .left div {
+        text-align: left;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 13px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Ysabeau Office', sans-serif;
+        display: inline-block;
+        padding: 10px 10px;
+        margin: 23px 11px;
+        color: white;
+        background-color: darkgray;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .btn:hover {
+        background-color: rgb(232, 228, 19);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 79px 68px;
+        padding: 70px;
+        width: 33%;
+        border-radius: 20px;
+
+    }
+
+    .formgroup {
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Ysabeau Office', sans-serif;
+        text-align: center;
+        display: block;
+        padding: 3px;
+        margin: 3px auto;
+        border: 2px solid black;
+        width: 174px;
+
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        text-align: center;
+        display: block;
+        width: 22%;
+        margin: auto;
+        padding: 6px 32px
+    }
+</style>
+
+<body>
+
+    <div class="parent">
+        <div class="left">
+            <!-- i am left -->
+            <img class="logo" src="logo.webp" alt="">
+            <div style="text-decoration: underline;">MR FITNESS</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Fitness Tips</a></li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Join the best gym in AKOLA now</h1>
+        <form action="noaction.php">
+            <label for="name"></label>
+            <div class="formgroup">
+                <input type="text" name="Name" placeholder="Enter your Name " id="name">
+            </div>
+            <br>
+            <label for="age"></label>
+            <div class="formgroup">
+                <input type="text" name="Age" placeholder="Enter your Age" id="age">
+            </div>
+            <br>
+            <label for="gender"></label>
+            <div class="formgroup">
+                <input type="text" name="Gender" placeholder="Enter your Gender"
+                id="gender">
+            </div>
+            <br>
+            <label for="locality"></label>
+            <div class="formgroup">
+                <input type="text" name="Locality" placeholder="Enter your name Locality"
+                id="locality">
+            </div>
+            <button class="btn">Submit</button>
+            <br>
+        <label for="reset"></label>
+        <div>
+        Reset:<input type="reset" value="reset now" id="reset">
+        </div>
+        
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
